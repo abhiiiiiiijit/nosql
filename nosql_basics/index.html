@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: white;
+  width: 1200px; /* Fixed width for infographic */
+  height: 800px; /* Fixed height */
+}
+
+.container {
+  display: grid;
+  gap: 15px;
+  grid-template-rows: auto auto auto auto;
+}
+
+.section {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  background: #e9ecef;
+  border-radius: 15px;
+  margin: 3px;
+  font-size: 14px;
+}
+
+.type-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.type {
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.icon {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  color: #2d3436;
+}
+
+/* Color coding */
+.key-value { background: #ffe5d9; }
+.document { background: #d8e2dc; }
+.column { background: #ffe5d9; }
+.graph { background: #ffcad4; }
+
+.use-case-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Header Section -->
+  <div class="section">
+    <h2>📌 NoSQL: "Not Only SQL"</h2>
+    <div class="badge">🌐 Distributed</div>
+    <div class="badge">⚡ High Performance</div>
+    <div class="badge">🔄 Horizontal Scaling</div>
+    <div class="badge">🛡️ Fault-Tolerant</div>
+  </div>
+
+  <!-- Database Types -->
+  <div class="section">
+    <h2>🗂️ NoSQL Database Types</h2>
+    <div class="type-grid">
+      <div class="type key-value">
+        <span class="icon">🔑</span>
+        <strong>Key-Value</strong><br>
+        <small>Redis, DynamoDB<br>Session/Caching</small>
+      </div>
+      
+      <div class="type document">
+        <span class="icon">📄</span>
+        <strong>Document</strong><br>
+        <small>MongoDB, CouchDB<br>Profiles/CMS</small>
+      </div>
+
+      <div class="type column">
+        <span class="icon">🗂️</span>
+        <strong>Column</strong><br>
+        <small>Cassandra, HBase<br>Feeds/Analytics</small>
+      </div>
+
+      <div class="type graph">
+        <span class="icon">📊</span>
+        <strong>Graph</strong><br>
+        <small>Neo4j, Neptune<br>Relationships/Fraud</small>
+      </div>
+    </div>
+  </div>
+
+  <!-- Benefits -->
+  <div class="section">
+    <h2>💡 Key Benefits</h2>
+    <div class="type-grid">
+      <div class="badge">🚀 Low Latency</div>
+      <div class="badge">⚖️ Elastic Scale</div>
+      <div class="badge">🧩 Flexible Schema</div>
+      <div class="badge">💸 Cost-Efficient</div>
+    </div>
+  </div>
+
+  <!-- Social Media Example -->
+  <div class="section">
+    <h2>🌍 Social Media Use Case</h2>
+    <div class="use-case-grid">
+      <div>📄 Profiles → Document</div>
+      <div>🗂️ Feeds → Column</div>
+      <div>🔑 Sessions → Key-Value</div>
+      <div>📊 Connections → Graph</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>MongoDB Overview Diagram</title>
+</head>
+<body>
+  <svg width="1000" height="700" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+        <path d="M0,0 L0,6 L6,3 z" fill="#000" />
+      </marker>
+    </defs>
+    
+    <!-- Central Node -->
+    <rect x="410" y="270" width="180" height="60" fill="#ffd" stroke="#000" rx="10" ry="10"/>
+    <text x="500" y="300" font-family="Arial" font-size="14" text-anchor="middle" alignment-baseline="middle">
+      MongoDB (NoSQL Document DB)
+    </text>
+    
+    <!-- Node 1: Overview -->
+    <rect x="420" y="10" width="160" height="80" fill="#cce5ff" stroke="#000" rx="10" ry="10"/>
+    <text x="500" y="30" font-family="Arial" font-size="12" text-anchor="middle">
+      Overview
+    </text>
+    <text x="500" y="45" font-family="Arial" font-size="10" text-anchor="middle">
+      • Documents (JSON)
+    </text>
+    <text x="500" y="60" font-family="Arial" font-size="10" text-anchor="middle">
+      • Collections
+    </text>
+    <text x="500" y="75" font-family="Arial" font-size="10" text-anchor="middle">
+      • Flexible Schema
+    </text>
+    
+    <!-- Node 2: Advantages -->
+    <rect x="720" y="60" width="160" height="80" fill="#cce5ff" stroke="#000" rx="10" ry="10"/>
+    <text x="800" y="80" font-family="Arial" font-size="12" text-anchor="middle">
+      Advantages
+    </text>
+    <text x="800" y="95" font-family="Arial" font-size="10" text-anchor="middle">
+      • Schema Flexibility
+    </text>
+    <text x="800" y="110" font-family="Arial" font-size="10" text-anchor="middle">
+      • Code-First Approach
+    </text>
+    <text x="800" y="125" font-family="Arial" font-size="10" text-anchor="middle">
+      • High Availability
+    </text>
+    
+    <!-- Node 3: Use Cases -->
+    <rect x="820" y="250" width="160" height="100" fill="#cce5ff" stroke="#000" rx="10" ry="10"/>
+    <text x="900" y="270" font-family="Arial" font-size="12" text-anchor="middle">
+      Use Cases
+    </text>
+    <text x="900" y="285" font-family="Arial" font-size="10" text-anchor="middle">
+      • IoT
+    </text>
+    <text x="900" y="300" font-family="Arial" font-size="10" text-anchor="middle">
+      • E-commerce
+    </text>
+    <text x="900" y="315" font-family="Arial" font-size="10" text-anchor="middle">
+      • Analytics
+    </text>
+    <text x="900" y="330" font-family="Arial" font-size="10" text-anchor="middle">
+      • Gaming
+    </text>
+    <text x="900" y="345" font-family="Arial" font-size="10" text-anchor="middle">
+      • Finance
+    </text>
+    
+    <!-- Node 4: CRUD Operations -->
+    <rect x="720" y="460" width="160" height="80" fill="#cce5ff" stroke="#000" rx="10" ry="10"/>
+    <text x="800" y="480" font-family="Arial" font-size="12" text-anchor="middle">
+      CRUD Ops
+    </text>
+    <text x="800" y="495" font-family="Arial" font-size="10" text-anchor="middle">
+      • insert / find
+    </text>
+    <text x="800" y="510" font-family="Arial" font-size="10" text-anchor="middle">
+      • update / delete
+    </text>
+    
+    <!-- Node 5: Indexes -->
+    <rect x="420" y="560" width="160" height="80" fill="#cce5ff" stroke="#000" rx="10" ry="10"/>
+    <text x="500" y="580" font-family="Arial" font-size="12" text-anchor="middle">
+      Indexes
+    </text>
+    <text x="500" y="595" font-family="Arial" font-size="10" text-anchor="middle">
+      • Fast Lookups
+    </text>
+    <text x="500" y="610" font-family="Arial" font-size="10" text-anchor="middle">
+      • Compound, Tree
+    </text>
+    
+    <!-- Node 6: Aggregation Framework -->
+    <rect x="120" y="460" width="160" height="80" fill="#cce5ff" stroke="#000" rx="10" ry="10"/>
+    <text x="200" y="480" font-family="Arial" font-size="12" text-anchor="middle">
+      Aggregation
+    </text>
+    <text x="200" y="495" font-family="Arial" font-size="10" text-anchor="middle">
+      • $match, $group
+    </text>
+    <text x="200" y="510" font-family="Arial" font-size="10" text-anchor="middle">
+      • $project, $sort
+    </text>
+    <text x="200" y="525" font-family="Arial" font-size="10" text-anchor="middle">
+      • $merge
+    </text>
+    
+    <!-- Node 7: Replication & Sharding -->
+    <rect x="20" y="260" width="160" height="80" fill="#cce5ff" stroke="#000" rx="10" ry="10"/>
+    <text x="100" y="280" font-family="Arial" font-size="12" text-anchor="middle">
+      Replication &
+    </text>
+    <text x="100" y="295" font-family="Arial" font-size="12" text-anchor="middle">
+      Sharding
+    </text>
+    <text x="100" y="310" font-family="Arial" font-size="10" text-anchor="middle">
+      • Replica Sets
+    </text>
+    <text x="100" y="325" font-family="Arial" font-size="10" text-anchor="middle">
+      • Scaling
+    </text>
+    
+    <!-- Node 8: Python Access -->
+    <rect x="120" y="60" width="160" height="80" fill="#cce5ff" stroke="#000" rx="10" ry="10"/>
+    <text x="200" y="80" font-family="Arial" font-size="12" text-anchor="middle">
+      Python Access
+    </text>
+    <text x="200" y="95" font-family="Arial" font-size="10" text-anchor="middle">
+      • MongoClient
+    </text>
+    <text x="200" y="110" font-family="Arial" font-size="10" text-anchor="middle">
+      • pymongo CRUD
+    </text>
+    
+    <!-- Connecting Lines -->
+    <line x1="500" y1="50" x2="500" y2="300" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+    <line x1="800" y1="100" x2="500" y2="300" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+    <line x1="900" y1="300" x2="500" y2="300" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+    <line x1="800" y1="500" x2="500" y2="300" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+    <line x1="500" y1="600" x2="500" y2="300" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+    <line x1="200" y1="500" x2="500" y2="300" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+    <line x1="100" y1="300" x2="500" y2="300" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+    <line x1="200" y1="100" x2="500" y2="300" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+  </svg>
+</body>
+</html>

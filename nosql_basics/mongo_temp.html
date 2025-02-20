@@ -1,0 +1,199 @@
+<div style="font-family: 'Segoe UI', sans-serif; max-width: 1200px; margin: auto; background: #ffffff; border-radius: 15px; box-shadow: 0 8px 30px rgba(0,0,0,0.1); padding: 25px;">
+
+    <!-- Header -->
+    <div style="text-align: center; margin-bottom: 30px;">
+        <h1 style="color: #2d5f8b; margin: 0; font-size: 32px;">
+            <i class="fas fa-database"></i> MongoDB Complete Guide
+        </h1>
+        <p style="color: #666; margin-top: 10px;">NoSQL Document Database Cheat Sheet</p>
+    </div>
+
+    <!-- Main Grid -->
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+
+        <!-- Core Concepts -->
+        <div class="card">
+            <h3><i class="fas fa-cube"></i> Core Concepts</h3>
+            <ul>
+                <li><i class="fas fa-file"></i> Document-oriented storage</li>
+                <li><i class="fas fa-layer-group"></i> Collections instead of tables</li>
+                <li><i class="fas fa-id-badge"></i> Automatic _id field</li>
+                <li><i class="fas fa-shapes"></i> Flexible JSON-like schema</li>
+            </ul>
+        </div>
+
+        <!-- Architecture -->
+        <div class="card">
+            <h3><i class="fas fa-server"></i> Architecture</h3>
+            <div style="display: flex; gap: 10px;">
+                <div style="flex: 1;">
+                    <h4><i class="fas fa-copy"></i> Replica Sets</h4>
+                    <ul>
+                        <li>Primary + Secondaries</li>
+                        <li>Automatic failover</li>
+                        <li>Data redundancy</li>
+                    </ul>
+                </div>
+                <div style="flex: 1;">
+                    <h4><i class="fas fa-project-diagram"></i> Sharding</h4>
+                    <ul>
+                        <li>Horizontal scaling</li>
+                        <li>Shard key selection</li>
+                        <li>Query router (mongos)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- CRUD Operations -->
+        <div class="card">
+            <h3><i class="fas fa-tasks"></i> CRUD Operations</h3>
+            <div style="columns: 2; gap: 20px;">
+                <div>
+                    <h4><i class="fas fa-plus-circle"></i> Create</h4>
+                    <code>insertOne()</code><br>
+                    <code>insertMany()</code>
+                </div>
+                <div>
+                    <h4><i class="fas fa-search"></i> Read</h4>
+                    <code>find()</code><br>
+                    <code>findOne()</code>
+                </div>
+                <div>
+                    <h4><i class="fas fa-edit"></i> Update</h4>
+                    <code>updateOne()</code><br>
+                    <code>updateMany()</code>
+                </div>
+                <div>
+                    <h4><i class="fas fa-trash"></i> Delete</h4>
+                    <code>deleteOne()</code><br>
+                    <code>deleteMany()</code>
+                </div>
+            </div>
+        </div>
+
+        <!-- Aggregation -->
+        <div class="card">
+            <h3><i class="fas fa-filter"></i> Aggregation Pipeline</h3>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
+                <div class="agg-stage">
+                    <div class="stage-icon">$match</div>
+                    Filter documents
+                </div>
+                <div class="agg-stage">
+                    <div class="stage-icon">$group</div>
+                    Group documents
+                </div>
+                <div class="agg-stage">
+                    <div class="stage-icon">$sort</div>
+                    Order results
+                </div>
+                <div class="agg-stage">
+                    <div class="stage-icon">$project</div>
+                    Reshape documents
+                </div>
+                <div class="agg-stage">
+                    <div class="stage-icon">$lookup</div>
+                    Join collections
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Use Cases -->
+        <div class="card">
+            <h3><i class="fas fa-lightbulb"></i> Key Use Cases</h3>
+            <ul>
+                <li><i class="fas fa-chart-line"></i> Real-time analytics</li>
+                <li><i class="fas fa-shopping-cart"></i> E-commerce catalogs</li>
+                <li><i class="fas fa-gamepad"></i> Gaming leaderboards</li>
+                <li><i class="fas fa-wifi"></i> IoT data management</li>
+                <li><i class="fas fa-university"></i> Financial transactions</li>
+            </ul>
+        </div>
+
+        <!-- Index Strategies -->
+        <div class="card">
+            <h3><i class="fas fa-search-plus"></i> Index Strategies</h3>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
+                <div class="index-type">
+                    <div class="index-icon">#</div>
+                    Single Field
+                </div>
+                <div class="index-type">
+                    <div class="index-icon">##</div>
+                    Compound
+                </div>
+                <div class="index-type">
+                    <div class="index-icon">{}</div>
+                    Multikey
+                </div>
+                <div class="index-type">
+                    <div class="index-icon">T</div>
+                    Text Search
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div style="text-align: center; margin-top: 30px; color: #666; font-size: 14px;">
+        <i class="fas fa-share-alt"></i> Share this MongoDB guide on LinkedIn! #NoSQL #Database #MongoDB
+    </div>
+
+</div>
+
+<style>
+    .card {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        border-left: 4px solid #2d5f8b;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    h3 {
+        color: #2d5f8b;
+        margin: 0 0 15px 0;
+        font-size: 20px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        padding: 8px 0;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .agg-stage, .index-type {
+        text-align: center;
+        padding: 12px;
+        background: #f8f9fa;
+        border-radius: 6px;
+    }
+
+    .stage-icon, .index-icon {
+        font-weight: bold;
+        color: #2d5f8b;
+        margin-bottom: 5px;
+    }
+
+    code {
+        background: #f8f9fa;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-family: monospace;
+    }
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">

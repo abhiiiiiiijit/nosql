@@ -1,0 +1,117 @@
+<div style="font-family:Arial; max-width:800px; margin:auto; background:#f0f0f0; padding:20px; border-radius:10px;">
+
+    <!-- Overview Section -->
+    <div style="background:white; padding:15px; margin-bottom:20px; border-radius:5px; border:1px solid #ddd;">
+      <h2 style="color:#2c3e50;">Apache Cassandra</h2>
+      <h3 style="color:#3498db;">Distributed NoSQL Database</h3>
+      <ul>
+        <li>🔑 Key Features:
+          <ul>
+            <li>Distributed & Decentralized</li>
+            <li>Peer-to-Peer Architecture</li>
+            <li>Tunable Consistency</li>
+            <li>Linear Scalability</li>
+            <li>High Write Throughput</li>
+          </ul>
+        </li>
+        <li>🏆 Key Users: Netflix, Uber, Spotify</li>
+      </ul>
+    </div>
+  
+    <!-- Architecture Diagram -->
+    <div style="background:white; padding:15px; margin-bottom:20px; border-radius:5px; border:1px solid #ddd;">
+      <h3 style="color:#3498db;">Architecture Components</h3>
+      <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:10px;">
+        <div style="background:#e8f4f8; padding:10px; border-radius:5px;">
+          <h4>Data Storage</h4>
+          <ul>
+            <li>Memtable (In-memory)</li>
+            <li>Commit Log (Write-ahead log)</li>
+            <li>SSTables (On-disk)</li>
+          </ul>
+        </div>
+        <div style="background:#e8f4f8; padding:10px; border-radius:5px;">
+          <h4>Distribution</h4>
+          <ul>
+            <li>Token Ring</li>
+            <li>Partitioner</li>
+            <li>Gossip Protocol</li>
+          </ul>
+        </div>
+        <div style="background:#e8f4f8; padding:10px; border-radius:5px;">
+          <h4>Operations</h4>
+          <ul>
+            <li>Write Path: Memtable → SSTable</li>
+            <li>Read Path: Bloom Filter → SSTable</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Data Model Section -->
+    <div style="background:white; padding:15px; margin-bottom:20px; border-radius:5px; border:1px solid #ddd;">
+      <h3 style="color:#3498db;">Data Model</h3>
+      <table style="width:100%; border-collapse:collapse;">
+        <tr style="background:#3498db; color:white;">
+          <th style="padding:10px;">Keyspace</th>
+          <th style="padding:10px;">Table</th>
+          <th style="padding:10px;">Primary Key</th>
+        </tr>
+        <tr>
+          <td style="padding:10px; border:1px solid #ddd;">Logical Container</td>
+          <td style="padding:10px; border:1px solid #ddd;">Column Family</td>
+          <td style="padding:10px; border:1px solid #ddd;">Partition Key + Clustering Key</td>
+        </tr>
+      </table>
+      <p>📌 Design Tip: Query-driven modeling with partition key for distribution and clustering key for sorting</p>
+    </div>
+  
+    <!-- CQL Section -->
+    <div style="background:white; padding:15px; margin-bottom:20px; border-radius:5px; border:1px solid #ddd;">
+      <h3 style="color:#3498db;">Cassandra Query Language (CQL)</h3>
+      <div style="display:flex; gap:20px;">
+        <div style="flex:1;">
+          <h4>Key Commands</h4>
+          <ul>
+            <li>CREATE KEYSPACE</li>
+            <li>CREATE TABLE</li>
+            <li>SELECT...WHERE (Partition Key)</li>
+            <li>COPY (Data Import/Export)</li>
+          </ul>
+        </div>
+        <div style="flex:1;">
+          <h4>Consistency Levels</h4>
+          <ul>
+            <li>ONE</li>
+            <li>QUORUM</li>
+            <li>ALL</li>
+            <li>LOCAL_QUORUM</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Use Cases Section -->
+    <div style="background:white; padding:15px; border-radius:5px; border:1px solid #ddd;">
+      <h3 style="color:#3498db;">Ideal Use Cases</h3>
+      <div style="display:grid; grid-template-columns: repeat(2, 1fr); gap:10px;">
+        <div style="background:#e8f4f8; padding:10px; border-radius:5px;">
+          ✅ High Velocity Writes<br>
+          (IoT, Clickstreams)
+        </div>
+        <div style="background:#e8f4f8; padding:10px; border-radius:5px;">
+          ✅ Time Series Data<br>
+          (Sensor Data, Metrics)
+        </div>
+        <div style="background:#e8f4f8; padding:10px; border-radius:5px;">
+          ✅ Global Availability<br>
+          (Multi-region Apps)
+        </div>
+        <div style="background:#e8f4f8; padding:10px; border-radius:5px;">
+          ✅ High Scalability Needs<br>
+          (Fast-growing Data)
+        </div>
+      </div>
+    </div>
+  
+  </div>

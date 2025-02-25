@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Apache Spark & Distributed Computing Overview</title>
+</head>
+<body>
+  <svg width="1000" height="700" style="background-color:#f7f7f7; font-family:Arial, sans-serif;">
+    <!-- Title -->
+    <text x="250" y="30" font-size="22" font-weight="bold" fill="#333">
+      Apache Spark & Distributed Computing Overview
+    </text>
+    
+    <!-- Top Row Boxes -->
+    <!-- Apache Spark Box -->
+    <rect x="50" y="50" width="200" height="70" fill="#d1e7dd" stroke="#0f5132" stroke-width="2" rx="5"/>
+    <text x="70" y="80" font-size="16" fill="#0f5132" font-weight="bold">Apache Spark</text>
+    <text x="60" y="100" font-size="12" fill="#0f5132">
+      • Open Source
+    </text>
+    <text x="60" y="115" font-size="12" fill="#0f5132">
+      • In-Memory & Scalable
+    </text>
+    
+    <!-- Distributed Computing Box -->
+    <rect x="300" y="50" width="220" height="70" fill="#cff4fc" stroke="#055160" stroke-width="2" rx="5"/>
+    <text x="320" y="80" font-size="16" fill="#055160" font-weight="bold">Distributed Computing</text>
+    <text x="310" y="100" font-size="12" fill="#055160">
+      • Group of nodes/processors
+    </text>
+    <text x="310" y="115" font-size="12" fill="#055160">
+      • Scalability & Fault Tolerance
+    </text>
+    
+    <!-- RDD & Parallel Programming Box -->
+    <rect x="570" y="50" width="370" height="70" fill="#f8d7da" stroke="#842029" stroke-width="2" rx="5"/>
+    <text x="590" y="80" font-size="16" fill="#842029" font-weight="bold">
+      RDD & Parallel Programming
+    </text>
+    <text x="580" y="100" font-size="12" fill="#842029">
+      • RDD: Immutable, Partitioned, Fault-Tolerant
+    </text>
+    <text x="580" y="115" font-size="12" fill="#842029">
+      • Parallel tasks over cluster
+    </text>
+    
+    <!-- Arrow Definitions -->
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="10" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="black" />
+      </marker>
+    </defs>
+    
+    <!-- Arrows from Top Boxes to Spark Architecture -->
+    <line x1="150" y1="120" x2="150" y2="180" stroke="black" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <line x1="410" y1="120" x2="410" y2="180" stroke="black" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <line x1="755" y1="120" x2="755" y2="180" stroke="black" stroke-width="1.5" marker-end="url(#arrow)"/>
+    
+    <!-- Spark Architecture Box -->
+    <rect x="50" y="180" width="890" height="150" fill="#fff3cd" stroke="#664d03" stroke-width="2" rx="5"/>
+    <text x="60" y="210" font-size="18" fill="#664d03" font-weight="bold">
+      Spark Architecture
+    </text>
+    <text x="70" y="235" font-size="14" fill="#664d03">
+      • Spark Core: Base engine, memory management & task scheduling
+    </text>
+    <text x="70" y="255" font-size="14" fill="#664d03">
+      • Driver Program: Orchestrates job & splits into tasks
+    </text>
+    <text x="70" y="275" font-size="14" fill="#664d03">
+      • Executors & Worker Nodes: Execute tasks in parallel
+    </text>
+    
+    <!-- Arrow from Spark Architecture to SparkSQL & DataFrames -->
+    <line x1="500" y1="330" x2="500" y2="380" stroke="black" stroke-width="1.5" marker-end="url(#arrow)"/>
+    
+    <!-- SparkSQL & DataFrames Box -->
+    <rect x="50" y="380" width="890" height="150" fill="#d1e7dd" stroke="#0f5132" stroke-width="2" rx="5"/>
+    <text x="60" y="410" font-size="18" fill="#0f5132" font-weight="bold">
+      SparkSQL & DataFrames
+    </text>
+    <text x="70" y="435" font-size="14" fill="#0f5132">
+      • SparkSQL: SQL queries on structured data with cost-based optimization
+    </text>
+    <text x="70" y="455" font-size="14" fill="#0f5132">
+      • DataFrames: Table-like structure (relational model), built on Spark SQL
+    </text>
+    <text x="70" y="475" font-size="14" fill="#0f5132">
+      • Benefits: Scalability, support for multiple formats & languages
+    </text>
+  </svg>
+</body>
+</html>
